@@ -15,19 +15,19 @@ save.image()
 png("../../images/scatterplot-tv-sales.png")
 plot(tv, sales, main="Scatterplot between TV and Sales", 
      xlab="TV budgets (in $1000)", ylab="Sales (in 1000)", pch=20, col='navy')
-abline(reg$coefficients[1:2], col='red')
+abline(lm(sales ~ tv), col='red')
 dev.off()
 
 png("../../images/scatterplot-radio-sales.png")
 plot(radio, sales, main="Scatterplot between Radio and Sales", 
      xlab="Radio budgets (in $1000)", ylab="Sales (in 1000)", pch=20, col='navy')
-abline(reg$coefficients[c(1,3)], col='red')
+abline(lm(sales ~ radio), col='red')
 dev.off()
 
 png("../../images/scatterplot-newspaper-sales.png")
 plot(newspaper, sales, main="Scatterplot between Newspaper and Sales", 
      xlab="Newspaper budgets (in $1000)", ylab="Sales (in 1000)", pch=20, col='navy')
-abline(reg$coefficients[c(1,4)], col='red')
+abline(lm(sales ~ newspaper), col='red')
 dev.off()
 
 # three diagnostics plots
