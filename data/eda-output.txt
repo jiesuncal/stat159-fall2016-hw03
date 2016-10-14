@@ -1,0 +1,12 @@
+       TV             Radio          Newspaper          Sales      
+ Min.   :  0.70   Min.   : 0.000   Min.   :  0.30   Min.   : 1.60  
+ 1st Qu.: 74.38   1st Qu.: 9.975   1st Qu.: 12.75   1st Qu.:10.38  
+ Median :149.75   Median :22.900   Median : 25.75   Median :12.90  
+ Mean   :147.04   Mean   :23.264   Mean   : 30.55   Mean   :14.02  
+ 3rd Qu.:218.82   3rd Qu.:36.525   3rd Qu.: 45.10   3rd Qu.:17.40  
+ Max.   :296.40   Max.   :49.600   Max.   :114.00   Max.   :27.00  
+                  TV      Radio  Newspaper     Sales
+TV        1.00000000 0.05480866 0.05664787 0.7822244
+Radio     0.05480866 1.00000000 0.35410375 0.5762226
+Newspaper 0.05664787 0.35410375 1.00000000 0.2282990
+Sales     0.78222442 0.57622257 0.22829903 1.0000000
