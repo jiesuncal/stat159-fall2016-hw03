@@ -82,11 +82,7 @@ stat159-fall2016-hw03/
 
     * In `regression-script.R`, compute a `"regression"` object---via `lm()`---as well as the summary of such regression object---via `summary()`.
 
-    * In `session-info-script.R`, include `library()` calls to ALL the packages used for this project, as well as the output of the function `sessionInfo()`. After you're done, output `session-info.txt` by running:
-
-    ```
-    Rscript session-info-script.R
-    ```
+    * In `session-info-script.R`, include `library()` calls to ALL the packages used for this project, as well as the output of the function `sessionInfo()`.
 
 4. The next part is `functions/`. Write functions to compute values for `RSS`, `TSS`, `RSE`, `R^2` and `F-statistic` which all take an object of class `"lm"` as input.
 
