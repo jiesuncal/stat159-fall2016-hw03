@@ -1,3 +1,5 @@
+library(testthat)
+
 # loading the function file
 source("functions/regression-functions.R")
 
