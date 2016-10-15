@@ -1,4 +1,5 @@
-sink(file = "../../session-info.txt")
 library(testthat)
+library(xtable)
+sink(file = "../../session-info.txt")
 sessionInfo()
 sink()

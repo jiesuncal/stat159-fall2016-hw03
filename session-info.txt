@@ -9,7 +9,7 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  base     
 
 other attached packages:
-[1] testthat_1.0.2
+[1] xtable_1.8-2   testthat_1.0.2
 
 loaded via a namespace (and not attached):
 [1] magrittr_1.5  R6_2.2.0      crayon_1.3.2  methods_3.3.1
