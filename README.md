@@ -82,13 +82,13 @@ stat159-fall2016-hw03/
 
     * In `regression-script.R`, compute a `"regression"` object---via `lm()`---as well as the summary of such regression object---via `summary()`.
 
-    * In `session-info-script.R`, include `library()` calls to ALL the packages used for this project, as well as the output of the function `sessionInfo()`. Export the output via `sink()` to the file `session-info.txt` by running:
+    * In `session-info-script.R`, include `library()` calls to ALL the packages used for this project, as well as the output of the function `sessionInfo()`. After you're done, output `session-info.txt` by running:
 
     ```
     Rscript session-info-script.R
     ```
 
-4. The next part is `functions/`. Write functions to compute values for $RSS$, $TSS$, $RSE$, $R^2$ and $F$-statistic which all take an object of class `"lm"` as input.
+4. The next part is `functions/`. Write functions to compute values for `RSS`, `TSS`, `RSE`, `R^2` and `F-statistic` which all take an object of class `"lm"` as input.
 
 5. Later on, write `tests/` and `test.R`. For testing purposes, use the data `mtcars` (that comes in R), and compute a multiple regression of `mpg` on `disp` and `hp`.
 
@@ -99,7 +99,7 @@ stat159-fall2016-hw03/
   # summary of 'reg'
   regsum <- summary(reg)
   ```
-And the compare the outputs of your functions with reference values in `tests/test-regression.R`:
+And then compare the outputs of your functions with reference values in `tests/test-regression.R`:
 
   ```
   # RSS
