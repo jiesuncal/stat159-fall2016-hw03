@@ -3,13 +3,13 @@
 data: data/Advertising.csv
 	curl http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv > data/Advertising.csv
 
-tests: code/test-that.R
+tests:
 	cd code && Rscript test-that.R
 
-eda: code/scripts/eda-script.R
+eda: data/Advertising.csv code/scripts/eda-script.R
 	cd code/scripts && Rscript eda-script.R
 
-regression: code/scripts/regression-script.R
+regression: data/Advertising.csv code/scripts/regression-script.R
 	cd code/scripts && Rscript regression-script.R
 
 report: report/report.Rmd
