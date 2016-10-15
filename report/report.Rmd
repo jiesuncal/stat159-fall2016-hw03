@@ -56,7 +56,7 @@ Consider the correlation matrix for the three predictor variables and response v
 
 ```{r results='asis', echo=FALSE}
 load("../data/correlation-matrix.RData")
-cor_table = xtable(cor_matrix, caption = "Correlation matrix for TV, radio, newspaper, and sales for the Advertising data")
+cor_table = xtable(format(cor_matrix, digits=3), caption = "Correlation matrix for TV, radio, newspaper, and sales for the Advertising data")
 print(cor_table, comment=FALSE)
 ```
 
@@ -65,9 +65,9 @@ We also care about other information of the model like $RSE$, $R^2$ and $F$-stat
 ```{r results='asis', echo=FALSE}
 source("../code/functions/regression-functions.R")
 names = c("RSE", "R^2", "F-statistic")
-values = c(residual_std_error(reg),
-           r_squared(reg),
-           f_statistic(reg))
+values = c(format(residual_std_error(reg), digits=3),
+           format(r_squared(reg), digits=3),
+           format(f_statistic(reg), digits=0))
 df = data.frame(names, values)
 colnames(df) = c("Quantity", "Value")
 lsm_table = xtable(df, caption = "More information about the least squares model")
@@ -76,4 +76,6 @@ print(lsm_table, comment=FALSE)
 
 ## Conclusions
 
-Now we're done with the regression analysis, we can address some questions related to the fitness and accuracy of this model. 
+Now we're done with the regression analysis, we can address some questions related to the fitness and accuracy of this model. The large $F$-statistic suggests that at least one of the advertising media must be related to sales. However, the p-values in Table 4 indicate that `TV` and `radio` are related to `sales`, but that there is no evidence that `newspaper` is associated with `sales`, in the presence of these two. Therefore, only a subset of the predictors is useful to explain the response.
+
+In terms of the model itself, $RSE$ and $R^2$ are both good measures. Given that $R^2$ is pretty close to 1, the model with three predictors fits most of the `Advertising` data. To examine the effect of each predictor, we need to take a closer look at $R^2$ of those pairwise simple regression models.

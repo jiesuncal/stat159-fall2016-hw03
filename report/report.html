@@ -155,7 +155,8 @@ $(document).ready(function () {
 </div>
 <div id="conclusions" class="section level2">
 <h2>Conclusions</h2>
-<p>Now we’re done with the regression analysis, we can address some questions related to the fitness and accuracy of this model.</p>
+<p>Now we’re done with the regression analysis, we can address some questions related to the fitness and accuracy of this model. The large <span class="math inline">\(F\)</span>-statistic suggests that at least one of the advertising media must be related to sales. However, the p-values in Table 4 indicate that <code>TV</code> and <code>radio</code> are related to <code>sales</code>, but that there is no evidence that <code>newspaper</code> is associated with <code>sales</code>, in the presence of these two. Therefore, only a subset of the predictors is useful to explain the response.</p>
+<p>In terms of the model itself, <span class="math inline">\(RSE\)</span> and <span class="math inline">\(R^2\)</span> are both good measures. Given that <span class="math inline">\(R^2\)</span> is pretty close to 1, the model with three predictors fits most of the <code>Advertising</code> data. To examine the effect of each predictor, we need to take a closer look at <span class="math inline">\(R^2\)</span> of those pairwise simple regression models.</p>
 </div>
 
 
