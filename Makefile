@@ -6,8 +6,8 @@ scripts_dir=cd code/scripts
 .PHONY: data tests eda regression report clean all
 
 # download the dataset
-data: data/Advertising.csv
-	curl http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv > $<
+data:
+	curl http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv > data/Advertising.csv
 
 # run tests
 tests: code/test-that.R code/tests/test-regression.R
