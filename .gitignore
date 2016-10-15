@@ -1,0 +1,9 @@
+# History files
+**/.Rhistory
+**/.Rapp.history
+
+# Mac OS files
+**/.DS_Store
+
+# Code data files
+code/**/.RData
